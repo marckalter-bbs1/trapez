@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Flächenhilfe Verpackungsnutzen</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f7;
+      text-align: center;
+    }
+    .container {
+      margin: 40px auto;
+      max-width: 600px;
+    }
+    h1 {
+      color: #2a7d2e;
+    }
+    .flaeche {
+      position: relative;
+      margin: 10px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      cursor: default;
+    }
+    .flaeche:hover .info {
+      display: block;
+    }
+    .info {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #2a7d2e;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+      margin-top: 5px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Flächenkontrolle: Einzelflächen</h1>
+
+    <div class="flaeche">T1
+      <div class="info">T1: 3930 cm²</div>
+    </div>
+    <div class="flaeche">T2
+      <div class="info">T2: 2600 cm²</div>
+    </div>
+    <div class="flaeche">T3
+      <div class="info">T3: 1520 cm²</div>
+    </div>
+    <div class="flaeche">T4
+      <div class="info">T4: 1520 cm²</div>
+    </div>
+    <div class="flaeche">T5
+      <div class="info">T5: 1010 cm²</div>
+    </div>
+    <div class="flaeche">T6
+      <div class="info">T6: 2900 cm²</div>
+    </div>
+    <div class="flaeche">T7
+      <div class="info">T7: 1240 cm²</div>
+    </div>
+
+    <div class="flaeche">R1
+      <div class="info">R1: 4060 cm²</div>
+    </div>
+    <div class="flaeche">R2
+      <div class="info">R2: 4060 cm²</div>
+    </div>
+    <div class="flaeche">R3
+      <div class="info">R3: 1520 cm²</div>
+    </div>
+    <div class="flaeche">R4
+      <div class="info">R4: 2060 cm²</div>
+    </div>
+    <div class="flaeche">R5
+      <div class="info">R5: 1520 cm²</div>
+    </div>
+    <div class="flaeche">R6
+      <div class="info">R6: 1520 cm²</div>
+    </div>
+    <div class="flaeche">R7
+      <div class="info">R7: 1520 cm²</div>
+    </div>
+    <div class="flaeche">R8
+      <div class="info">R8: 740 cm²</div>
+    </div>
+    <div class="flaeche">R9
+      <div class="info">R9: 3045 cm²</div>
+    </div>
+    <div class="flaeche">R10
+      <div class="info">R10: 4060 cm²</div>
+    </div>
+  </div>
+</body>
+</html>
