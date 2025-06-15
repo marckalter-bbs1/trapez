@@ -11,7 +11,7 @@
     }
     .container {
       margin: 40px auto;
-      max-width: 600px;
+      max-width: 800px;
     }
     h1 {
       color: #2a7d2e;
@@ -36,6 +36,12 @@
       min-width: 300px;
       color: #2a7d2e;
     }
+    img.skizze {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+      border: 1px solid #aaa;
+    }
   </style>
   <script>
     function zeigeInfo(text) {
@@ -47,24 +53,27 @@
   <div class="container">
     <h1>Flächenkontrolle: Einzelflächen</h1>
 
-    <div class="flaeche" onclick="zeigeInfo('T1: 3930 mm²')">T1</div>
-    <div class="flaeche" onclick="zeigeInfo('T2: 2600 mm²')">T2</div>
-    <div class="flaeche" onclick="zeigeInfo('T3: 1520 mm²')">T3</div>
-    <div class="flaeche" onclick="zeigeInfo('T4: 1520 mm²')">T4</div>
-    <div class="flaeche" onclick="zeigeInfo('T5: 1010 mm²')">T5</div>
-    <div class="flaeche" onclick="zeigeInfo('T6: 2900 mm²')">T6</div>
-    <div class="flaeche" onclick="zeigeInfo('T7: 1240 mm²')">T7</div>
+    <img src="Nutzen.png" alt="Flächenskizze Nutzen" class="skizze">
 
-    <div class="flaeche" onclick="zeigeInfo('R1: 4060 mm²')">R1</div>
-    <div class="flaeche" onclick="zeigeInfo('R2: 4060 mm²')">R2</div>
-    <div class="flaeche" onclick="zeigeInfo('R3: 1520 mm²')">R3</div>
-    <div class="flaeche" onclick="zeigeInfo('R4: 2060 mm²')">R4</div>
-    <div class="flaeche" onclick="zeigeInfo('R5: 1520 mm²')">R5</div>
-    <div class="flaeche" onclick="zeigeInfo('R6: 1520 mm²')">R6</div>
-    <div class="flaeche" onclick="zeigeInfo('R7: 1520 mm²')">R7</div>
-    <div class="flaeche" onclick="zeigeInfo('R8: 740 mm²')">R8</div>
-    <div class="flaeche" onclick="zeigeInfo('R9: 3045 mm²')">R9</div>
-    <div class="flaeche" onclick="zeigeInfo('R10: 4060 mm²')">R10</div>
+    <div class="flaeche" onclick="zeigeInfo('T1: 3930 cm²')">T1</div>
+    <div class="flaeche" onclick="zeigeInfo('T2: 2600 cm²')">T2</div>
+    <div class="flaeche" onclick="zeigeInfo('T3: 1520 cm²')">T3</div>
+    <div class="flaeche" onclick="zeigeInfo('T4: 1520 cm²')">T4</div>
+    <div class="flaeche" onclick="zeigeInfo('T5: 1010 cm²')">T5</div>
+    <div class="flaeche" onclick="zeigeInfo('T6: 2900 cm²')">T6</div>
+    <div class="flaeche" onclick="zeigeInfo('T7: 1240 cm²')">T7</div>
+
+    <div class="flaeche" onclick="zeigeInfo('R1: 4060 cm²')">R1</div>
+    <div class="flaeche" onclick="zeigeInfo('R2: 4060 cm²')">R2</div>
+    <div class="flaeche" onclick="zeigeInfo('R3: 1520 cm²')">R3</div>
+    <div class="flaeche" onclick="zeigeInfo('R4: 2060 cm²')">R4</div>
+    <div class="flaeche" onclick="zeigeInfo('R5: 1520 cm²')">R5</div>
+    <div class="flaeche" onclick="zeigeInfo('R6: 1520 cm²')">R6</div>
+    <div class="flaeche" onclick="zeigeInfo('R7: 1520 cm²')">R7</div>
+    <div class="flaeche" onclick="zeigeInfo('R8: 740 cm²')">R8</div>
+    <div class="flaeche" onclick="zeigeInfo('R9: 3045 cm²')">R9</div>
+    <div class="flaeche" onclick="zeigeInfo('R10: 4060 cm²')">R10</div>
+    <div class="flaeche" onclick="zeigeInfo('R11: 3200 cm²')">R11</div>
 
     <div id="anzeige">Bitte eine Fläche auswählen.</div>
   </div>
