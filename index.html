@@ -12,27 +12,34 @@
     .container {
       margin: 40px auto;
       max-width: 960px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .button-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
     }
     h1 {
       color: #2a7d2e;
     }
     .flaeche {
-      margin: 6px;
-      display: inline-block;
-      padding: 6px 20px;
+      padding: 10px 20px;
       background-color: #ffffff;
       border: 1px solid #ccc;
       border-radius: 6px;
       cursor: pointer;
     }
     #anzeige {
-      margin-top: 30px;
+      margin: 30px 0;
       font-size: 1.2em;
       padding: 12px;
       background-color: #ffffff;
       border: 2px solid #2a7d2e;
       border-radius: 8px;
-      display: inline-block;
       min-width: 300px;
       color: #2a7d2e;
     }
@@ -54,6 +61,7 @@
 
     <img src="Nutzen.png" alt="Flächenskizze Nutzen" class="skizze">
 
+    <div class="button-grid">
     <div class="flaeche" onclick="zeigeInfo('T1: 3995 mm²')">T1</div>
     <div class="flaeche" onclick="zeigeInfo('T2: 3874,5 mm²')">T2</div>
     <div class="flaeche" onclick="zeigeInfo('T3: 11628 mm²')">T3</div>
@@ -74,10 +82,11 @@
     <div class="flaeche" onclick="zeigeInfo('R10: 26593 mm²')">R10</div>
     <div class="flaeche" onclick="zeigeInfo('R11: 20043 mm²')">R11</div>
 
-    <div id="anzeige">Bitte eine Fläche auswählen.</div>
+      <div class="flaeche" onclick="zeigeInfo('Hinweis: Die Flächen T6 und T7 sind gleich groß.')">Hinweis 1</div>
+      <div class="flaeche" onclick="zeigeInfo('Hinweis: Die Flächen R4 und R8 sind gleich groß.')">Hinweis 2</div>
+    </div>
 
-    <div class="flaeche" onclick="zeigeInfo('Hinweis: Die Flächen T6 und T7 sind gleich groß.')">Hinweis 1</div>
-    <div class="flaeche" onclick="zeigeInfo('Hinweis: Die Flächen R4 und R8 sind gleich groß.')">Hinweis 2</div>
+    <div id="anzeige">Bitte eine Fläche auswählen.</div>
   </div>
 </body>
 </html>
